@@ -1,0 +1,112 @@
+.column {
+  float: left;
+  width: 25%;
+  height: 140px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  border: 10%;
+  border-color: black;
+  /*border-collapse: collapse;
+  border: 1px solid rgb(219, 215, 215);*/
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}  
+.row {
+  text-align: -webkit-center;
+}
+.btn {
+  text-align: -webkit-center;
+}
+.btnn {
+  background: greeb;
+  background: #0ac223;
+  color: white;
+  font-size: larger;
+  padding: 4px;
+  margin :0px 80px 0 20px;
+  border: none;
+  width: 130px;
+}
+
+.loading{
+  padding:180px;
+  text-align: center;
+  font-size: 5ex;
+}
+
+
+.heading{
+  color:coral;
+  font-size:1er;
+  margin: 50px;
+  
+}
+
+.button1{
+  
+  padding: 10px;
+  width:45%;
+  background-color:coral;
+
+}
+
+.button2{
+  
+  padding: 10px;
+  width:45%;
+  background-color:white;
+
+}
+
+
+.bt1{
+  margin:20px 0 10px 100px;
+  
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  height:180px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+ padding-left: 15px;
+ padding-bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
